@@ -10,7 +10,7 @@ function Pizza(toppings, size,price){
 Pizza.prototype.modifyCost = function(){
   if (this.size === large){
     this.price += 2;
-  }if else (this.size === XL){
+  }else if(this.size === XL){
     this.price += 5;
   }else {
     this.price;
@@ -147,18 +147,30 @@ Pizza.prototype.modifyCost = function(){
 };
 function pizzaTopAndSize(pizza) {
   $("#pizza-price").show();
-  $(".top").html(pizza.top);
+  $(".top1").html(pizza.top1);
+  $(".top2").html(pizza.top2);
+  $(".top3").html(pizza.top3);
+  $(".top4").html(pizza.top4);
+  $(".top5").html(pizza.top5);
   $(".size").html(pizza.size);
   $(".cost").html(pizza.cost);
 };
 $(document).ready(function(){
   $("form#pizza-select").submit(function(event){
     event.preventDefault();
-    let pizzaTop = $("input:radio[name=top]:checked").val();
+    let pizzaTop1 = $("input:radio[name=top1]:checked").val();
+    let pizzaTop2 = $("input:radio[name=top2]:checked").val();
+    let pizzaTop3 = $("input:radio[name=top3]:checked").val();
+    let pizzaTop4 = $("input:radio[name=top4]:checked").val();
+    let pizzaTop5 = $("input:radio[name=top5]:checked").val();
     let pizzaSize =$("input:radio[name=size]:checked").val();
-    $("input:radio[name=top]:checked").val("");
+    $("input:radio[name=top1]:checked").val("");
+    $("input:radio[name=top2]:checked").val("");
+    $("input:radio[name=top3]:checked").val("");
+    $("input:radio[name=top4]:checked").val("");
+    $("input:radio[name=top5]:checked").val("");
     $("input:radio[name=size]:checked").val("");
-    let pizzaCost = new Pizza(pizzaTop, pizzaSize);
+    let pizzaCost = new Pizza(pizzaTop1, pizzaTop2, pizzaTop3, pizzaTop4, pizzaTop5, pizzaSize);
     pizzaCost.modifyCost();
     showTopAndSize(pizzaCost);
     $("#pizza-select").hide();

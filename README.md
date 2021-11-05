@@ -6,6 +6,8 @@
 *_CSS_
 *_MD_
 *_Bootstrap_
+*_JavaScript_
+*_JQuery_
 ## Description
 _Webpage for Pizza Planet_
 ## Setup/Installation Requirements
@@ -25,3 +27,5 @@ Copyright(c)_2021_ _Marisa Edgar_
 Test: "return an object with each kind of pizza, and its size"
 Code: const myPizza = new Pizza(["toppings"]], "large");
 Expected Output: Pizza { toppings: ["Veggie","Meat"], size: "large" }
+
+Test:
