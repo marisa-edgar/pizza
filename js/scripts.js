@@ -5,7 +5,7 @@ function Pizza(toppings, size,price){
   this.top4 = top4;
   this.top5 = top5;
   this.size = size;
-  this.price = price
+  this.price = 10;
 }
 Pizza.prototype.modifyCost = function(){
   if (this.top1 === "onion"){
@@ -33,112 +33,112 @@ Pizza.prototype.modifyCost = function(){
   } else{
     this.price;
   }
-  // next topping
-  if (this.top1 === "onion"){
+  // next topping 2
+  if (this.top2 === "onion"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "mushroom"){
+  if (this.top2 === "mushroom"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "black olive"){
+  if (this.top2 === "black olive"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "bell pepper"){
+  if (this.top2 === "bell pepper"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "jalapeno"){
+  if (this.top2 === "jalapeno"){
     this.price += 1;
   } else{
     this.price;
   }
-  // next topping
-  if (this.top1 === "onion"){
+  // next topping 3
+  if (this.top3 === "onion"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "mushroom"){
+  if (this.top3 === "mushroom"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "black olive"){
+  if (this.top3 === "black olive"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "bell pepper"){
+  if (this.top3 === "bell pepper"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "jalapeno"){
+  if (this.top3 === "jalapeno"){
     this.price += 1;
   } else{
     this.price;
   }
-  // next topping
-  if (this.top1 === "onion"){
+  // next topping 4
+  if (this.top4 === "onion"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "mushroom"){
+  if (this.top4 === "mushroom"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "black olive"){
+  if (this.top4 === "black olive"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "bell pepper"){
+  if (this.top4 === "bell pepper"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "jalapeno"){
+  if (this.top4 === "jalapeno"){
     this.price += 1;
   } else{
     this.price;
   }
-  // next topping
-  if (this.top1 === "onion"){
+  // next topping 5
+  if (this.top5 === "onion"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "mushroom"){
+  if (this.top5 === "mushroom"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "black olive"){
+  if (this.top5 === "black olive"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "bell pepper"){
+  if (this.top5 === "bell pepper"){
     this.price += 1;
   } else{
     this.price;
   }
-  if (this.top1 === "jalapeno"){
+  if (this.top5 === "jalapeno"){
     this.price += 1;
   } else{
     this.price;
   }
 };
-function pizzatopandsize(pizza) {
+function pizzaTopAndSize(pizza) {
   $("#pizza-price").show();
   $(".top").html(pizza.top);
   $(".size").html(pizza.size);
