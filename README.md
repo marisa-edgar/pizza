@@ -25,7 +25,7 @@ Copyright(c)_2021_ _Marisa Edgar_
 
 ###Specs
 Test: "return an object with each kind of pizza, and its size"
-Code: const myPizza = new Pizza(["toppings"]], "large");
-Expected Output: Pizza { toppings: ["Veggie","Meat"], size: "large" }
+Code: const Pizza = new Pizza(["top1", "top2", "top3","Top4","top5";]], "large");
+Expected Output: Pizza { toppings: ["onion","Mushroom","black-olives","green-bell-pepper","jalapeno"], size: ["large"] }
 
 Test:

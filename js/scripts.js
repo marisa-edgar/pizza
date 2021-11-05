@@ -1,4 +1,4 @@
-function Pizza(toppings, size,price){
+function Pizza(top1, top2, top3, top4, top5, size){
   this.top1 = top1;
   this.top2 = top2;
   this.top3 = top3;
@@ -154,16 +154,17 @@ function pizzaTopAndSize(pizza) {
   $(".top5").html(pizza.top5);
   $(".size").html(pizza.size);
   $(".cost").html(pizza.cost);
-};
+}
 $(document).ready(function(){
-  $("form#pizza-select").submit(function(event){
+  $("form#pizza-select").submit(function(event) {
     event.preventDefault();
+    let pizzaSize =$("input:radio[name=size]:checked").val();
     let pizzaTop1 = $("input:radio[name=top1]:checked").val();
     let pizzaTop2 = $("input:radio[name=top2]:checked").val();
     let pizzaTop3 = $("input:radio[name=top3]:checked").val();
     let pizzaTop4 = $("input:radio[name=top4]:checked").val();
     let pizzaTop5 = $("input:radio[name=top5]:checked").val();
-    let pizzaSize =$("input:radio[name=size]:checked").val();
+    
     $("input:radio[name=top1]:checked").val("");
     $("input:radio[name=top2]:checked").val("");
     $("input:radio[name=top3]:checked").val("");
