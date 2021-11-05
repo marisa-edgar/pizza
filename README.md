@@ -1,4 +1,4 @@
-#_{Pizza}_
+#_{Pizza Planet}_
 #### By_Marisa Edgar**_
 #### _Pizza Parlor Page_
 ## Technologies Used
@@ -7,7 +7,7 @@
 *_MD_
 *_Bootstrap_
 ## Description
-__
+_Webpage for Pizza Planet_
 ## Setup/Installation Requirements
 *_Clone repository_
 *_Navigate to file_
@@ -20,3 +20,8 @@ __
 *_MIT
 *_Questions, issues or concerns Email marisaedgar1212@gmail.com
 Copyright(c)_2021_ _Marisa Edgar_
+
+###Specs
+Test: "return an object with each kind of pizza, and its size"
+Code: const myPizza = new Pizza(["toppings"]], "large");
+Expected Output: Pizza { toppings: ["Veggie","Meat"], size: "large" }
